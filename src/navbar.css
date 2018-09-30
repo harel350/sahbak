@@ -1,0 +1,28 @@
+
+#MainNavbar {
+    margin-bottom: 0px;
+
+}
+#MsgIcon {
+    color: orange;
+    font-size: 25px;
+    padding-top: 4px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+#BellIcon {
+    color: orange;
+    font-size: 25px;
+}
+#SearchInput {
+    width: 10cm;
+    border-bottom: 1px solid black;
+
+}
+#SearchIcon {
+    cursor: pointer;
+}
+#DropNavi{
+    height: 6cm;
+    width: 10cm
+}
