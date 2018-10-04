@@ -29,14 +29,7 @@
 
 
 
-#ad {
-    padding: 4px 15px 4px 15px;
-    border: 1px solid black;
-    margin:10px;
-    font-size: 24px;
-    color: black;
-    border-radius: 10px;    
-}
+
 a:hover{
   background: yellow;
 }

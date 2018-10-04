@@ -23,6 +23,18 @@
     cursor: pointer;
 }
 #DropNavi{
-    height: 6cm;
-    width: 10cm
+    height: auto;
+    width: auto;
+}
+#ad {
+    padding: 4px 10px 4px 10px;
+    border: 1px solid black;
+    border-width:medium;
+    margin:5PX;
+    font-size: 24px;
+    color: black;
+    border-radius: 10px;
+
+
+    text-align: center;
 }
