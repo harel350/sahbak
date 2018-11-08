@@ -1,0 +1,61 @@
+#footer {
+
+    background  : hsl(65,100%,80%);
+    height  : 2.5cm ;
+    width   : 305.94px;
+
+}
+#foot {
+  margin-left: 0.35cm;
+  position: fixed;
+  display: flex;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  bottom : 70px;
+}
+.OptionButton {
+  margin-top: 2.6cm;
+  margin-left: -9cm;
+}
+.option{
+  display: inline;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 2px;
+
+}
+#BellIcon {
+    color: orange;
+    font-size: 25px;
+}
+#BellIcon1 {
+  color: orange;
+  font-size: 35px;
+  margin-left: 160px;
+  padding-top: 4px;
+  padding-right: 10px;
+
+  cursor: pointer;
+
+}
+#senderName {
+  text-align: right;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#content {
+  border :3px solid black;
+  font-size: 12px;
+  max-height: 6cm;
+
+  height: auto;
+  width: 305.94px;
+  overflow: auto;
+  text-align: right;
+  padding: 7px 7px 14px 4px;
+  margin: 15px 15px 60px 15px;
+}
+.col-sm-6 {
+  margin-left: 0px;
+  font-size: 14px;
+}

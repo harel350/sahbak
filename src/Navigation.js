@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand, NavbarNav, NavbarToggler, Collapse, NavItem, NavLink, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'mdbreact';
+import { Navbar, NavbarBrand, NavbarNav, NavbarToggler, Collapse, NavItem, Dropdown, DropdownToggle, DropdownMenu } from 'mdbreact';
 import { BrowserRouter as Router } from 'react-router-dom';
-import './navbar.css';
 
+import './navbar.css';
+import Modals from './Modals.js';
+import AQMessageBox from './AQMessageBox.js';
 
 class NavbarMenu  extends Component {
     constructor(props) {
@@ -10,10 +12,12 @@ class NavbarMenu  extends Component {
         this.state = {
             collapse: false,
             isWideEnough: false,
-            arrmsg:["harel","moshe","yakov"],
 
         };
     this.onClick = this.onClick.bind(this);
+
+
+
 
     }
 
@@ -22,6 +26,9 @@ class NavbarMenu  extends Component {
             collapse: !this.state.collapse,
         });
     }
+
+
+
 
     render() {
         return (
@@ -32,24 +39,19 @@ class NavbarMenu  extends Component {
                         </NavbarBrand>
                         { !this.state.isWideEnough && <NavbarToggler onClick = { this.onClick } />}
                         <Collapse isOpen = { 'this.state.collapse' } navbar >
-                        <NavbarNav middel>
+                        <NavbarNav>
 
                                 <NavItem>
                                     <Dropdown >
                                         <DropdownToggle nav caret><i className="navbar-toggler-icon" id="BellIcon"></i></DropdownToggle>
                                             <DropdownMenu id="DropNavi">
-                                                <NavItem >
-                                                    <a  id="ad" href="https://www.w3schools.com/html/">טבלאות</a>
-                                                </NavItem>
-                                                <NavItem >
-                                                    <a  id="ad" href="https://www.w3schools.com/html/">ניהול חיילים ומרצים</a>
-                                                </NavItem>
-                                                <NavItem>
-                                                    <a  id="ad" href="https://www.w3schools.com/html/">הפקת דיפלומה</a>
-                                                </NavItem>
+                                                    <a  className="ad" href="https://www.w3schools.com/html/">טבלאות</a>
+                                                    <a className="ad" href="https://www.w3schools.com/html/">ניהול חיילים ומרצים</a>
+                                                    <a  className="ad" href="https://www.w3schools.com/html/">הפקת דיפלומה</a>
                                             </DropdownMenu>
                                     </Dropdown>
                                 </NavItem>
+
                                 <NavItem>
                                      <form className="form-inline md-form mt-0">
                                         <input className="form-control mr-sm-2 mb-0 text-white" id="SearchInput" type="text" placeholder="Search" aria-label="Search"/>
@@ -57,23 +59,14 @@ class NavbarMenu  extends Component {
                                     </form>
                                 </NavItem>
                             </NavbarNav>
+
                             <NavbarNav right id="NavbarOfIconMenu">
+
                                 <NavItem>
-                                    <i className="glyphicon glyphicon-envelope" id="MsgIcon"></i>
+                                      <Modals/>
                                 </NavItem>
-
                                 <NavItem>
-                                    <Dropdown>
-                                        <DropdownToggle nav caret><i className="fa fa-bell-o" id="BellIcon"></i></DropdownToggle>
-                                            <DropdownMenu>
-                                                {
-                                                    this.state.arrmsg.map(x=>
-                                                        <DropdownItem>{x}</DropdownItem>
-                                                        )
-                                                }
-
-                                            </DropdownMenu>
-                                    </Dropdown>
+                                    <AQMessageBox/>
                                 </NavItem>
                             </NavbarNav>
 

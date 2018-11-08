@@ -1,0 +1,46 @@
+#MsgIcon {
+    color: orange;
+    font-size: 25px;
+    padding-top: 4px;
+    padding-right: 10px;
+    cursor: pointer;
+
+}
+
+#MsgIcon1 {
+    color: orange;
+    font-size: 35px;
+    padding-top: 4px;
+    padding-right: 10px;
+    cursor: pointer;
+    left: 150px;
+
+}
+
+.option{
+
+  cursor: pointer;
+  font-size: 16px;
+  padding: 2px;
+  margin-left: 1cm;
+}
+i:hover {
+  color:red;
+}
+.OptionButton {
+  margin-top: 15px;
+}
+
+#MsgInput {
+  width: 7cm;
+  height: 5cm;
+
+}
+#MessageLine {
+  margin-left: 0.5cm;
+}
+#InputLine {
+
+  margin-right: 0.1cm;
+  margin-bottom: 1cm;
+}

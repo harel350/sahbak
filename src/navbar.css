@@ -3,17 +3,8 @@
     margin-bottom: 0px;
 
 }
-#MsgIcon {
-    color: orange;
-    font-size: 25px;
-    padding-top: 4px;
-    padding-right: 10px;
-    cursor: pointer;
-}
-#BellIcon {
-    color: orange;
-    font-size: 25px;
-}
+
+
 #SearchInput {
     width: 10cm;
     border-bottom: 1px solid black;
@@ -23,18 +14,17 @@
     cursor: pointer;
 }
 #DropNavi{
-    height: auto;
-    width: auto;
+
+    width: 3cm;
+    font-size: 200%;
 }
-#ad {
-    padding: 4px 10px 4px 10px;
-    border: 1px solid black;
-    border-width:medium;
-    margin:5PX;
-    font-size: 24px;
-    color: black;
-    border-radius: 10px;
-
-
+.ad {
+    border: 3px solid black;
+    display:block;
+    margin: 0px 5px 0px 5px;
+    padding-left:20px;
+    padding-right: 10px;
+    font-family:sans-serif;
     text-align: center;
+    border-radius: 10%;
 }
