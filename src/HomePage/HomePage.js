@@ -1,22 +1,21 @@
 import React, { Component } from 'react';
 import NavbarMenu from './Navigation.js';
 import TopViewLine from './Topview.js';
-import './App.css';
+import { NavLink } from 'react-router-dom';
+import './HomePage.css';
 
-class App extends Component {
+class HomePage extends Component {
   render() {
 
     return (
       <div >
-          <div>
+        <div>
           <NavbarMenu/>
-          </div>
-          <div>
+        </div>
+        <div>
           <TopViewLine/>
-          </div>
-
-
-
+        </div>
+        
 
       </div>
     );
@@ -24,4 +23,4 @@ class App extends Component {
 }
 
 
-export default App;
+export default HomePage;

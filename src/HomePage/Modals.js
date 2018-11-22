@@ -94,7 +94,7 @@ Modal.setAppElement('#root')
 
             </form>
           </div>
-         <div className="OptionButton">
+         <div className="OptionButton1">
 
             <i className="glyphicon glyphicon-remove option" onClick={this.closeModal}/>
             <i className="glyphicon glyphicon-envelope option"/>

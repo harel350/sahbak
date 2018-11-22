@@ -3,6 +3,7 @@ import {Tooltip } from 'reactstrap';
 import './TopView.css';
 import PopoverTopline from './popovertopline.js';
 
+
 class TopViewLine extends Component {
   constructor(props) {
     super(props);
@@ -16,6 +17,7 @@ class TopViewLine extends Component {
     this.state = {
       popoverOpen:[false,false,false],
       value: '22',
+
 
 
     };
@@ -66,7 +68,7 @@ class TopViewLine extends Component {
       <div className="body" >
 
           <div className="container">
-
+              
             <div className="content right">
               <h1>הצעות</h1>
                 <div className="line">

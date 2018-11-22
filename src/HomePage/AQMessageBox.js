@@ -31,7 +31,7 @@ Modal.setAppElement('#root')
       arrmsg:[{
         sender    : 'harel',
         date      : '20/10/2018',
-        content   : 'חדגלחגלדשחגלשדחגלחשדגלחדשלחגשדלחגדשחגלךדשחגלךשחדגךלדשחגלךדשחךגלחשדךגחךשחךלחדשלךגחשדלךחגדךשחגלךשדחגלךחגלךשדחגלךדחגדלך',
+        content   : "harel is my name. what is your name sdfsdfsfsdfdsfdsfsdfdsfdfsdfkdkfffdsfds",
         idMessage :  1,
               } ,
               {
@@ -124,7 +124,11 @@ Modal.setAppElement('#root')
 
               <div className="col-sm-6" id="senderName"><b>{this.state.currentmsg.sender}</b><label> : מ</label></div>
           </div>
-          <div id="content">{this.state.currentmsg.content}</div>
+          <div id="content">
+            <p>{this.state.currentmsg.content}</p>
+
+            <p>({this.state.currentmsg.date})</p>
+          </div>
 
         <div id="foot">
           <div className="demo">
